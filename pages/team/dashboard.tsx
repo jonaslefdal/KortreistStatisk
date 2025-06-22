@@ -30,7 +30,7 @@ export default function DashboardPage() {
   teamId: 1,
   name: "MiljøHeltene",
   teamTotalScore: 9820,
-  teamProfilePicture: "TeamAvatar4.png",
+  teamProfilePicture: "teamAvatar4.png",
   members: [
     {
       userId: 1,

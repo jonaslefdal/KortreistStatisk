@@ -7,7 +7,7 @@
 <p align="center">Static version of https://github.com/vickynygaard/Kortreist. This is a version for showing the frontend without a working backend, database etc..</p>
 
 <p align="center">
-  <a href="https://vickynygaard.github.io/Kortreist">Live Demo</a> • 
+  <a href="https://jonaslefdal.github.io/KortreistStatisk/">Live Demo</a> • 
 </p>
 
 ---
