@@ -1,0 +1,33 @@
+{
+	"name": "KortreistStatisk",
+	"short_name": "KortreistStatisk",
+	"description": "A Progressive Web App for Bouvet",
+	"scope": "/KortreistStatisk/",
+	"icons": [
+		{
+			"src": "images/favicon/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "images/favicon/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "images/favicon/icon-maskable-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "images/favicon/icon-maskable-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	],
+	"start_url": "/KortreistStatisk/?source=pwa",
+	"orientation": "portrait",
+	"display": "standalone"
+}
