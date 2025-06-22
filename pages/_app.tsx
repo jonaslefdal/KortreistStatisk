@@ -108,7 +108,7 @@ function MainApp({ Component, pageProps }: MainAppProps) {
 // Initialize the service worker
 useEffect(() => {
     if ("serviceWorker" in navigator) {
-      const swPath = process.env.NODE_ENV === "production" ? "/Kortreist/sw.js" : "/sw.js";
+      const swPath = process.env.NODE_ENV === "production" ? "/KortreistStatisk/sw.js" : "/sw.js";
 
       navigator.serviceWorker.getRegistrations().then((registrations) => {
         registrations.forEach((reg) => reg.unregister()); // Remove old SW

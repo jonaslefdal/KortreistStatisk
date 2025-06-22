@@ -1,8 +1,8 @@
 {
-	"name": "Kortreist",
-	"short_name": "Kortreist",
+	"name": "KortreistStatisk",
+	"short_name": "KortreistStatisk",
 	"description": "A Progressive Web App for Bouvet",
-	"scope": "/Kortreist/",
+	"scope": "/KortreistStatisk/",
 	"icons": [
 		{
 			"src": "images/favicon/icon-192.png",
@@ -27,7 +27,7 @@
 			"purpose": "maskable"
 		}
 	],
-	"start_url": "/Kortreist/?source=pwa",
+	"start_url": "/KortreistStatisk/?source=pwa",
 	"orientation": "portrait",
 	"display": "standalone"
 }

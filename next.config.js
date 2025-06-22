@@ -6,7 +6,7 @@ const withPWA = require("next-pwa")({
   });
   
   const isProd = process.env.NODE_ENV === "production";
-  const basePath = isProd ? "/Kortreist" : ""; // Define basePath BEFORE using it
+  const basePath = isProd ? "/KortreistStatisk" : ""; // Define basePath BEFORE using it
   
   const nextConfig = withPWA({
 	output: "export", // Enables static export for GitHub Pages
@@ -14,7 +14,7 @@ const withPWA = require("next-pwa")({
 	  unoptimized: true, // Required for GitHub Pages
 	},
 	basePath,
-	assetPrefix: isProd ? "/Kortreist/" : "",
+	assetPrefix: isProd ? "/KortreistStatisk/" : "",
 	reactStrictMode: true,
 	trailingSlash: true, // Ensures GitHub Pages compatibility
 	swcMinify: true,
