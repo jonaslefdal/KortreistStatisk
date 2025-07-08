@@ -89,6 +89,28 @@ export const useUserAuth = (): {
 
   useEffect(() => {
     const initializeAuth = async () => {
+      const mock = localStorage.getItem("mockUser");
+      if (mock) {
+        try {
+          const parsed = JSON.parse(mock);
+          setUserData({
+            email: parsed.email || "demo@example.com",
+            name: parsed.name || "Demo User",
+            idTokenClaims: {
+              sub: "mock-sub",
+              email: parsed.email,
+              name: parsed.name,
+            },
+            idToken: "mock-id-token",
+            accessToken: "mock-access-token",
+          });
+          setLoading(false);
+          return;
+        } catch (e) {
+          console.warn("Invalid mockUser data in localStorage");
+        }
+      }
+
       try {
         const response = await instance.handleRedirectPromise();
   

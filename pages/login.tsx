@@ -93,7 +93,7 @@ const [error, setError] = useState<string | null>(null);
         />
         <h1 className="text-4xl font-semibold text-customViolet">Kortreist</h1>
 
-        <div className="flex flex-col gap-4 mt-12">
+        <div className="flex flex-col gap-4 mt-12 items-center">
         <Button
           onClick={handleSignIn}
           title="Logg Inn"
@@ -105,6 +105,13 @@ const [error, setError] = useState<string | null>(null);
             title="Opprett Konto"
             className="border-customViolet text-white bg-customViolet w-60"
           />
+          <button
+            onClick={() => router.push("/altLogin")}
+            title="Hopp over innlogging"
+            className="w-40 py-1 rounded-md border-2 border-gray-400 text-gray-700 bg-white hover:bg-gray-100 transition text-l font-semibold mt-12" 
+          >
+            Skip Logg Inn
+          </button>
         </div>
       </div>
     </div>
