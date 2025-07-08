@@ -9,6 +9,7 @@ const Logout = () => {
 
   useEffect(() => {
     const logout = async () => {
+      localStorage.removeItem("mockUser");
       await instance.logoutRedirect({
         postLogoutRedirectUri: `${process.env.NEXT_PUBLIC_BASE_PATH}/login`, 
       });

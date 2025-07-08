@@ -38,6 +38,7 @@ export default function Settings() {
 
 const confirmLogout = () => {
   sessionStorage.removeItem("userUpserted");
+  localStorage.removeItem("mockUser");
   instance.logoutRedirect();
 };
 
